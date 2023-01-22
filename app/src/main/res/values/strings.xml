@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Locker</string>
+    <string name="title_activity_splash__screen">Splash_Screen</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_menu">Locker</string>
+    <string name="title_activity_sample">Sample</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_locked_files">LockedFiles</string>
+    <string name="title_activity_content__view">Content_View</string>
+    <string name="title_activity_aboutfile">Aboutfile</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_passwordenter">Passwordenter</string>
+    <string name="title_activity_home_password_enter">HomePasswordEnter</string>
+    <string name="title_activity_unlock_files">UnlockFiles</string>
+    <string name="title_activity_invalid_attempt">InvalidAttempt</string>
+    <string name="title_activity_invalid_attempt_viewer">InvalidAttemptViewer</string>
+</resources>
