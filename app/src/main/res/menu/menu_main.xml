@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/overflow"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/sort"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/Time"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/sortbytime"
+                android:title="Sort By Time">
+            </item>
+            <item
+                android:id="@+id/Size"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/view"
+                android:title="Sort By Size">
+            </item>
+            <item
+                android:id="@+id/Name"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/sortbyname"
+                android:title="Sort By Name">
+            </item>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/view"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/fileview"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/Details"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/detailsview"
+                android:title="Details View">
+            </item>
+            <item
+                android:id="@+id/Large"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/largeview"
+                android:title="Large View">
+            </item>
+            <item
+                android:id="@+id/ExtraLarge"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/extralargeview"
+                android:title="Extra Large View">
+            </item>
+        </menu>
+    </item>
+</menu>
