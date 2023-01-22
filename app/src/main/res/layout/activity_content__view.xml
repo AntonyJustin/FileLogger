@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locker.welcome.locker.Menu"
+    android:background="#e5e4e2">
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:id="@+id/menu_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="5dip"
+        android:layout_below="@+id/txtname">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"></GridView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/nodatas"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found!!"
+        android:textSize="30sp"
+        />
+</RelativeLayout>
+
+
+
+

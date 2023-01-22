@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locker.welcome.locker.Setting">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:isScrollContainer="true"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:padding="13dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/title">
+                <TextView
+                    android:id="@+id/txt_enablepin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Enable Pin "
+                    android:textSize="20sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+                <Switch
+                    android:id="@+id/switchpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_enablepin"
+                    android:layout_weight="2" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearsound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:padding="13dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/linear">
+                <TextView
+                    android:id="@+id/txt_enablesound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Enable Sound "
+                    android:textSize="20sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+                <Switch
+                    android:id="@+id/switchsound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_enablepin"
+                    android:layout_weight="2" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearvibration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:padding="13dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/linearsound">
+                <TextView
+                    android:id="@+id/txt_enablevibration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Enable Vibration "
+                    android:textSize="20sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+                <Switch
+                    android:id="@+id/switchvibration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_enablepin"
+                    android:layout_weight="2" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearinvalidattempt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:padding="3dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/linearvibration">
+                <Button
+                    android:id="@+id/btn_invalidattempt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invalid Attempt "
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearchangepwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/linearinvalidattempt">
+                <Button
+                    android:id="@+id/btn_changepwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Change Password "
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearcleardata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/linearchangepwd">
+                <Button
+                    android:id="@+id/btn_cleardata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Clear Data"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearreset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/linearcleardata">
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Reset"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearabout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/setting_btn_background"
+                android:layout_below="@+id/linearreset">
+                <Button
+                    android:id="@+id/btn_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="About"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearabout"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip"
+                android:padding="8dip">
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_weight="2"
+                    android:background="@drawable/ok_button"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="5dip"
+                    />
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:layout_weight="2"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/cancel_button"
+                    android:layout_marginLeft="5dip"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
+
+
+
+

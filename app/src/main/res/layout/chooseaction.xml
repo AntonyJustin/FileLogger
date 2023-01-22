@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locker.welcome.locker.Setting"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Action"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#633494"
+        android:textColor="#ffffff"
+        />
+
+    <RelativeLayout
+        android:id="@+id/lnrfilename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+        <Button
+            android:id="@+id/btnviewfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Open"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dip"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnlockorunlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="UnLock"
+            android:textSize="20sp"
+            android:layout_below="@+id/btnviewfile"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btndetailfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Detail"
+            android:textSize="20sp"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/btnlockorunlock"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btndeletefile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Delete"
+            android:textSize="20sp"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/btndetailfile"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Exit"
+            android:textSize="20sp"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_below="@+id/btndeletefile"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

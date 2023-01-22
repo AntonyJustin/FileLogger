@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/large_grid"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_grid"
+        android:layout_width="100dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/largeview"
+        />
+
+    <TextView
+        android:id="@+id/header_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/img_grid"
+        android:textStyle="bold"
+        android:textSize="15dip"
+        android:text="Filename.ext"
+        />
+
+    <TextView
+        android:id="@+id/subheader_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/header_textview"
+        android:textSize="13dip"
+        android:text="100KB"
+        />
+
+    <TextView
+        android:id="@+id/subheader_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/subheader_textview"
+        android:textSize="13dip"
+        android:text="13/02/2021 15:58:24"
+        />
+</RelativeLayout>

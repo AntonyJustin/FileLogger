@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locker.welcome.locker.Menu"
+    android:background="#e5e4e2">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invalid Attempt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#057fff" />
+    <LinearLayout
+        android:id="@+id/menu_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_below="@+id/title">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:verticalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="10dip"></GridView>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/aboutdialog">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_margin="10dip"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            />
+    <LinearLayout
+        android:id="@+id/lnrfilename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:layout_below="@+id/img">
+        <TextView
+            android:id="@+id/lblfilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="FileName : "
+            android:textSize="15sp"
+            android:textAlignment="textEnd"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtfilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_enablepin"
+            android:gravity="left"
+            android:text="filename.ext"
+            android:textSize="15sp"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnrfilesize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:layout_below="@+id/lnrfilename">
+        <TextView
+            android:id="@+id/lblfilesize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="FileSize : "
+            android:textSize="15sp"
+            android:textAlignment="textEnd"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtfilesize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_enablepin"
+            android:gravity="left"
+            android:text="0000.kb"
+            android:textSize="15sp"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnrpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:layout_below="@+id/lnrfilesize">
+        <TextView
+            android:id="@+id/lblpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Using Pin : "
+            android:textSize="15sp"
+            android:textAlignment="textEnd"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_enablepin"
+            android:gravity="left"
+            android:text="Yes"
+            android:textSize="15sp"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnrfilestatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:layout_below="@+id/lnrpin">
+        <TextView
+            android:id="@+id/lblfilestatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="File Stats : "
+            android:textSize="15sp"
+            android:textAlignment="textEnd"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtfilestatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_enablepin"
+            android:gravity="left"
+            android:text="Locked"
+            android:textSize="15sp"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnrfilelockeddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:layout_below="@+id/lnrfilestatus">
+        <TextView
+            android:id="@+id/lblfilelockeddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Locked Date : "
+            android:textSize="15sp"
+            android:textAlignment="textEnd"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtfilelockeddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_enablepin"
+            android:gravity="left"
+            android:text="Jun30-20"
+            android:textSize="15sp"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnrfileduration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:layout_below="@+id/lnrfilelockeddate"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/lblduration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Duration : "
+            android:textSize="15sp"
+            android:textAlignment="textEnd"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtduration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_enablepin"
+            android:gravity="left"
+            android:text="05:08:00"
+            android:textSize="15sp"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
